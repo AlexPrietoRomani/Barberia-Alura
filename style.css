@@ -1,0 +1,261 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background: #BBBBBB;
+    padding:  20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative; /* etiqueta que sirve para poder cambiar de posición */
+    margin: 0 auto; /* etiqueta que sirve para poder cambair el margen */
+}
+
+nav{
+    position: absolute; /* etiqueta que sirve para poder cambiar de posición */
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline; 
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase; /* etiqueta que sirve para poder poner en negrita */
+    color: black; /* etiqueta que sirve para poder poner tipo de color */
+    font-weight: bold; 
+    font-size: 22px; /* etiqueta que sirve para poder poner diferente tamaño de letra */
+    text-decoration: none; /* etiqueta que sirve para quitar los estilos o poner un diferente estilo */
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block; /* etiqueta que permite poder poner en bloques iguales a una lista */
+    text-align: center; /* etiqueta que permite poder centar el texto */
+    width: 30%;
+    vertical-align: top; /* etiqueta que genera la poscición vertical */
+    margin: 0 1.5%; /* Aplica un margen */
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000; /* Genera un borde donde: primero debe ir el tamaño, tipo y el color en ese órden */
+    border-radius: 10px 25px 40px 50px; /* Genera el redondeadodel borde */
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripción{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+form{
+    margin: 40px 0 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron, form textarea{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    margin: 20px;
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: orange;
+    border: none;
+    border-radius: 5px; /* Aplica un contorneado del botón */
+    transition: 1s all;
+    cursor: pointer; /* Genera un cambio del cursor a otro  tipo */
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2); /* Aplica una transformación al botón cuando hover capture el cursor */
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/* Aquí inicia el CSS para nuestra home */
+
+.baner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin:  0 0 1em; /*  em hace referencia a el tamaño usado por defecto en la pagina */
+    clear: left;
+}
+
+.principal{
+    width: 940px;
+    margin: 0 auto;
+    background: #FEFEFE;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left; /* Propiedad que permite realizar que la imagen se ponga al rededor de el texto  */
+    margin: 0 20px 20px 0; 
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 2.4;
+}
+
+.items:before{
+    content: "★";
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 10px #000000; /* Etiqueta que realiza una sombra, siendo primero la ubicación( derecha y abajo), difuminación, expansión y color respectivamente */
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and(max-width:480px){
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+    
+    .caja, .principal, .diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}
